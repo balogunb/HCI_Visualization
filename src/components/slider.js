@@ -6,8 +6,8 @@ import Slider from '@material-ui/core/Slider';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '40%',
-    height: 8,
+    width: '100%',
+
   },
   margin: {
     height: theme.spacing(3),
@@ -42,40 +42,11 @@ const marks = [
 ];
 
 
-const PrettoSlider = withStyles({
-  root: {
-    color: '#52af77',
-    height: 8,
-  },
-  thumb: {
-    height: 24,
-    width: 24,
-    backgroundColor: '#fff',
-    border: '2px solid currentColor',
-    marginTop: -8,
-    marginLeft: -12,
-    '&:focus, &:hover, &$active': {
-      boxShadow: 'inherit',
-    },
-  },
-  active: {},
-  valueLabel: {
-    left: 'calc(-50% + 4px)',
-  },
-  track: {
-    height: 8,
-    borderRadius: 4,
-  },
-  rail: {
-    height: 8,
-    borderRadius: 4,
-  },
-})(Slider);
-
 
 const MainSlider = withStyles({
   root: {
-    height: 20,
+    width: '70%',
+    height: 8,
   },
   thumb: {
     height: 24,
@@ -97,19 +68,13 @@ const MainSlider = withStyles({
     borderRadius: 4,
   },
   markLabel: {
-    color: 'red',
     transform: 'translate(-50%,50%)',
+
     
   },
   mark: {
     height: 20,
-    
   },
-  markActive: {
-    height: 20,
-    
-  },
-
   rail: {
     height: 20,
     borderRadius: 0,
@@ -125,14 +90,13 @@ export default function SliderComponent() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography id="discrete-slider-custom" gutterBottom>
+      <Typography variant="h5"  display="block">
         Donate Amount
       </Typography>
       <MainSlider 
         defaultValue={500}
         valueLabelDisplay="auto" 
         aria-label="pretto slider" 
-        defaultValue={20}
         marks={marks}
         step={50}
         min={0}

@@ -9,6 +9,10 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import DonateIMG from '../img/donate.jpeg'
 import SliderComponent from './slider.js'
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
+import DonationType from './donationType.js';
+import DesignationSelect from './donationDesignation.js'
 
 
 
@@ -19,7 +23,17 @@ export default function Body() {
   return (
     <div>
       <img src={DonateIMG} width='100%' height="50%" />
-      <SliderComponent />
+      <React.Fragment>
+        <CssBaseline />
+        <Container maxWidth="md" style={{ backgroundColor: '#cfe8fc', height: '100vh' }}>
+          <SliderComponent/>
+          <DonationType/>
+          <DesignationSelect/>
+         
+        </Container>
+      </React.Fragment>
+      
+
 
       
 
