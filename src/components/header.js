@@ -8,10 +8,12 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { green } from '@material-ui/core/colors';
 import Grid from '@material-ui/core/grid';
+import Logo from '../img/caclv_logo.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    minWidth:200
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -38,8 +40,9 @@ export default function Header() {
              >
          
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                  <img src="https://www.caclv.org/wp-content/uploads/2017/04/Artboard-2-e1492618718611.png"/>
+                  <img src={Logo} width="100" height="60"/>
                 </IconButton>
+                <h1> Donate </h1>
                 <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
                   <MenuIcon style={{ fontSize: 60  }}/>
                 </IconButton>
