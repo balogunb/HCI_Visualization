@@ -9,7 +9,7 @@ import TreeStruct from './components/tree.js'
 
 function App() {
   return (
-    <div>
+    <div min-height='100%' >
     <Header />
     <Main/>
     <StickyFooter/>

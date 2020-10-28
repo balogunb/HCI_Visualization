@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
+    marginTop: '10%'
   },
   main: {
     marginTop: theme.spacing(8),
@@ -29,11 +30,10 @@ const useStyles = makeStyles((theme) => ({
   },
   footer: {
     padding: theme.spacing(3, 2),
-    position: 'absolute',
+    position:'fixed',
     bottom: 0,
     width: '100%',
-
-    marginTop: 'auto',
+    marginBottom: '0',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
   },
