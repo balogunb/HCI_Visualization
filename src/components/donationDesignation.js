@@ -37,7 +37,7 @@ export default function DesignationSelect() {
           Designation
       </Typography>
       <FormControl className={classes.formControl}>
-        <InputLabel id="demo-controlled-open-select-label">Age</InputLabel>
+        
         <Select
           labelId="demo-controlled-open-select-label"
           id="demo-controlled-open-select"
@@ -46,13 +46,23 @@ export default function DesignationSelect() {
           onOpen={handleOpen}
           value={age}
           onChange={handleChange}
+          
         >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
+          <MenuItem value={1}>CACLV</MenuItem>
+          <MenuItem value={2}>Community Action Development Corporation Allentown</MenuItem>
+          <MenuItem value={3}>Community Action Development Committee Bethlehem</MenuItem>
+          <MenuItem value={4}>Community Action Financial Services</MenuItem>
+          <MenuItem value={5}>Food Policy Council</MenuItem>
+          <MenuItem value={6}>Lehigh Valley Community Land Trust</MenuItem>
+          <MenuItem value={7}>OnTrack</MenuItem>
+          <MenuItem value={8}>Racial and Ethnic Justice</MenuItem>
+          <MenuItem value={9}>Rising Tide Community Loan Fund</MenuItem>
+          <MenuItem value={10}>Slate Belt Rising</MenuItem>
+          <MenuItem value={11}>SHE Program</MenuItem>
+          <MenuItem value={12}>Second Harvest Food Bank</MenuItem>
+          <MenuItem value={13}>Sixth Street Shelter</MenuItem>
+          <MenuItem value={14}>Work Ready</MenuItem>
+          <MenuItem value={15}>Weatherization</MenuItem>
         </Select>
       </FormControl>
     </div>

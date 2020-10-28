@@ -13,6 +13,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import DonationType from './donationType.js';
 import DesignationSelect from './donationDesignation.js'
+import AddressForm from './AddressForm.js'
 
 
 
@@ -25,13 +26,21 @@ export default function Body() {
       <img src={DonateIMG} width='100%' height="50%" />
       <React.Fragment>
         <CssBaseline />
-        <Container maxWidth="md" style={{ backgroundColor: '#cfe8fc', height: '100vh' }}>
+        <Container maxWidth="md" style={{ backgroundColor: '#f2e2c9' }}>
           <SliderComponent/>
           <DonationType/>
           <DesignationSelect/>
          
         </Container>
       </React.Fragment>
+      <React.Fragment>
+        <CssBaseline />
+          <Container maxWidth="md" style={{ backgroundColor: '#f2e2c9'}}>
+            <AddressForm/>
+          </Container>
+      </React.Fragment>
+
+
       
 
 
