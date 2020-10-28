@@ -33,7 +33,8 @@ export default function DesignationSelect() {
 
   return (
     <div>
-      <Typography variant="h5"  display="block">
+      <h1> </h1>
+      <Typography variant="h6">
           Designation
       </Typography>
       <FormControl className={classes.formControl}>
@@ -46,7 +47,6 @@ export default function DesignationSelect() {
           onOpen={handleOpen}
           value={age}
           onChange={handleChange}
-          
         >
           <MenuItem value={1}>CACLV</MenuItem>
           <MenuItem value={2}>Community Action Development Corporation Allentown</MenuItem>

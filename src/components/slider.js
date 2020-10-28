@@ -2,6 +2,7 @@ import React from 'react';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
+import Grid from '@material-ui/core/Grid';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -47,6 +48,7 @@ const MainSlider = withStyles({
   root: {
     width: '70%',
     height: 8,
+
   },
   thumb: {
     height: 24,
@@ -90,18 +92,26 @@ export default function SliderComponent() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography variant="h5"  display="block">
-        Donate Amount
+      <Typography variant="h6" >
+        Donation Amount
       </Typography>
-      <MainSlider 
-        defaultValue={500}
-        valueLabelDisplay="auto" 
-        aria-label="pretto slider" 
-        marks={marks}
-        step={50}
-        min={0}
-        max={1000}
-        />
+      <Grid
+       container
+       direction="row"
+       justify="space-around"
+       alignItems="center"
+      >
+        <MainSlider 
+          defaultValue={500}
+          valueLabelDisplay="auto" 
+          aria-label="pretto slider" 
+          marks={marks}
+          step={50}
+          min={0}
+
+          max={1000}
+          />
+      </Grid>
     </div>    
   );
 }

@@ -13,7 +13,6 @@ import Logo from '../img/caclv_logo.png'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    minWidth:200
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -38,8 +37,7 @@ export default function Header() {
                 justify="space-between"
                 alignItems="center"
              >
-         
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href='//caclv.org'>
                   <img src={Logo} width="100" height="60"/>
                 </IconButton>
                 <h1> Donate </h1>
