@@ -1,25 +1,19 @@
 import React from 'react';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
-import clsx from 'clsx';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
-
-
 
 
 
 function Second() {
 
     const [valueF, setValueF] = React.useState('1');
-      const handleChangeF = (event) => {
+    const handleChangeF = (event) => {
     setValueF(event.target.value);
-  };
+    };
   return(
         <FormControl component="fieldset">
           <h1>  </h1>
@@ -45,7 +39,7 @@ export default function DonationType() {
   const [value, setValue] = React.useState('True');
   let sec;
 
-  if(value == 'False') {
+  if(value === 'False') {
     sec = <Second/>
   }
 

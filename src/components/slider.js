@@ -83,9 +83,6 @@ const MainSlider = withStyles({
   },
 })(Slider);
 
-function valuetext(value) {
-  return `${value}°C`;
-}
 
 export default function SliderComponent() {
 
